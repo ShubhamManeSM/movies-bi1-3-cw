@@ -3,13 +3,13 @@ import useFetch from "../useFetch";
 
 const Movies = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const { data, loading } = useFetch("http://localhost:3001/movies");
+  const { data, loading } = useFetch("https://movies-api-brown-two.vercel.app/");
 
   // console.log(data)
 
   const handleDelete = async (movieId) => {
     try {
-      const response = await fetch(`http://localhost:3001/movies/${movieId}`, {
+      const response = await fetch(`https://movies-api-brown-two.vercel.app/${movieId}`, {
         method: "DELETE",
       });
 
