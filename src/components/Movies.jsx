@@ -9,7 +9,7 @@ const Movies = () => {
 
   const handleDelete = async (movieId) => {
     try {
-      const response = await fetch(`https://movies-api-brown-two.vercel.app/${movieId}`, {
+      const response = await fetch(`https://movies-api-brown-two.vercel.app/movies/${movieId}`, {
         method: "DELETE",
       });
 
