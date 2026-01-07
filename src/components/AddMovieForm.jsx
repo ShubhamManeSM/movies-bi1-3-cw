@@ -27,7 +27,7 @@ const AddMovieForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      const response = await fetch("https://movies-api-brown-two.vercel.app/", 
+      const response = await fetch("https://movies-api-brown-two.vercel.app/movies", 
         {
           method: "POST",
           headers: {
