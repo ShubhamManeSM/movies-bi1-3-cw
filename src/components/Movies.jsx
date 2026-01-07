@@ -3,7 +3,7 @@ import useFetch from "../useFetch";
 
 const Movies = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const { data, loading } = useFetch("https://movies-api-brown-two.vercel.app/");
+  const { data, loading } = useFetch("https://movies-api-brown-two.vercel.app/movies");
 
   // console.log(data)
 
